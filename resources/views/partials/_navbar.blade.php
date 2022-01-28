@@ -1,23 +1,23 @@
 <div class="NavBar">
     <div class="nav-wrapper">
         <div class="logo-section">
-            <a href="./index.html"><img src='./Styles/images/Logo.png' alt="" class="logo-main" /></a>
+            <a href="{{ route('index') }}"><img src='{{ asset('images/Logo.png', true) }}' alt="" class="logo-main" /></a>
         </div>
         <div class="links-section">
             <div class="links-section-wrapper">
-            <a href="" class="link-nav">
+            <a href="{{ route('index') }}" class="link-nav">
                     Home
                 </a>
-                <a href="#3" class="link-nav">
+                <a href="{{ route('index') }}#3" class="link-nav">
                     About us
                 </a>
-                <a href="#4" class="link-nav">
+                <a href="{{ route('index') }}#4" class="link-nav">
                     Services
                 </a>
-                <a href="#6" class="link-nav">
+                <a href="{{ route('index') }}#6" class="link-nav">
                     Locations
                 </a>
-                <a href="#6" class="link-nav">
+                <a href="{{ route('index') }}#6" class="link-nav">
                     Contacts
                 </a>
             </div>
@@ -25,7 +25,7 @@
 
         <div class="user-section">
             <div class="button-signin">
-                <a href="./SignIn.html" class="link-nav-button">
+                <a href="{{ route('login') }}" class="link-nav-button">
                     Sign In
                 </a>
             </div>
@@ -66,7 +66,7 @@
                     data-icon="bx:bx-menu"
                 ></span>
                 <div class="dropdown">
-                <a href='./index.html' class="link-nav-drop">
+                <a href='{{ route('index') }}' class="link-nav-drop">
                     Home
                 </a>
                     <a href="#2" class="link-nav-drop">

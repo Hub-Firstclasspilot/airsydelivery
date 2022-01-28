@@ -239,7 +239,7 @@
                             <div class="t-wrap-box">
                                 <div class="img">
                                 <div class="img-tests"id="c">
-                                    <img src='./Styles/images/1.jpg' alt="" />
+                                    <img src='{{ asset('images/1.jpg', true) }}' alt="" />
                                 </div>
                                 <span style='font-size:13px; color:gray; margin:0; padding:0;'><br />Owner of M C Automotive Repair, Paint & Body</span>
                                     <div class="t-name">
@@ -262,7 +262,7 @@
                             <div class="t-wrap-box">
                                 <div class="img">
                                     <div class="img-tests"id="b">
-                                    <img src='./Styles/images/3.jpg' alt="" />
+                                    <img src='{{ asset('images/3.jpg', true) }}' alt="" />
                                     </div>
                                     <span style='font-size:13px; color:gray; margin:0; padding:0;'><br />Distribution Supervisor</span>
                                     <div class="t-name">
@@ -278,7 +278,7 @@
                             <div class="t-wrap-box">
                                 <div class="img" >
                                 <div class="img-tests" id="a">
-                                    <img src='./Styles/images/2.jpg' alt="" />
+                                    <img src='{{ asset('images/2.jpg', true) }}' alt="" />
                                 </div>
                                 <span style='font-size:13px; color:gray; margin:0; padding:0;'><br /></span>
                                     <div class="t-name">
@@ -294,7 +294,7 @@
                             <div class="t-wrap-box">
                                 <div class="img" >
                                 <div class="img-tests" id="a">
-                                    <img src='./Styles/images/3.jpg'alt="" />
+                                    <img src='{{ asset('images/3.jpg', true) }}'alt="" />
                                 </div>
                                 <span style='font-size:13px; color:gray; margin:0; padding:0;'><br />MAI Tucson</span>
                                     <div class="t-name">
@@ -310,7 +310,7 @@
                             <div class="t-wrap-box">
                                 <div class="img" >
                                 <div class="img-tests" id="a">
-                                    <img src='./Styles/images/1.jpg' alt="" />
+                                    <img src='{{ asset('images/1.jpg', true) }}' alt="" />
                                 </div>
                                 <span style='font-size:13px; color:gray; margin:0; padding:0;'><br />Store Owner</span>
                                     <div class="t-name">

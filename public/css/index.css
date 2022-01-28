@@ -1,0 +1,810 @@
+/* General Setting Removing Defaults */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    line-height: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+body {
+    background: black;
+}
+/* logo desigin */
+.logo-main {
+    width: 50px;
+}
+.userimage {
+    width: 100%;
+}
+.userBox {
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background: black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-right: 20px;
+}
+.user-name {
+    font-size: large;
+    margin: 15px;
+    margin-right: 30px;
+}
+
+/* Nav Section */
+.NavBar {
+    height: 13vh;
+    color: white;
+    background: black;
+    display: grid;
+    align-items: center;
+    padding: 0 30px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+}
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.links-section {
+    display: none;
+    align-items: center;
+}
+.logo-section h1 {
+    font-size: small;
+}
+.user-section {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.button-signin {
+    width: fit-content;
+    background: #20a4fd;
+    margin-right: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.link-nav-button {
+    display: block;
+    padding: 18px 15px;
+}
+.link-nav-button-m {
+    display: block;
+    padding: 010px 15px;
+    background: #20a4fd;
+    border:none;
+    border-radius: 10px;
+    color: white;
+}
+.link-nav {
+    margin-right: 40px;
+}
+.link-nav-linked {
+    margin-right: 40px;
+    font-weight: 500;
+    color: #20a4fd;
+}
+
+/* Home Main */
+.HomeMain {
+    height: fit-content;
+    background: url("./images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0vw;
+}
+.HomeMain-overlay,
+.Qualities {
+    height: 94vh;
+    background: rgba(0, 0, 0, 0.283);
+    display: grid;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Headers */
+.mainHeader {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.blue-mainHeader {
+    color: #20a4fd;
+}
+.subHeader {
+    padding-top: 30px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+/* Input Tracking Codes style */
+.track-button {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+.input-tracking {
+    display: flex;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#id-inputs {
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: #000000;
+    outline: none;
+}
+.input-tracking .button-signin {
+    margin: 0;
+}
+
+/* Qualities */
+.Qualities {
+    height: fit-content;
+    background: black;
+    margin-bottom: 80px;
+}
+.Qualities-boxes {
+    margin-top: 60px;
+    display: grid;
+    justify-content: center;
+}
+.Qualities-wrap-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.Qualities-box-subs {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    width: fit-content;
+    margin: 30px;
+}
+.Qualities-sub-box {
+    height: 100px;
+    width: 100px;
+    background: gray;
+    margin: auto;
+}
+.title-Qualities-box {
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+/* About Us */
+.AboutUS {
+    
+    background-color: white;
+    padding-bottom:100px;
+}
+.AboutUS .AboutUS-wrap .mainHeader, .AboutUS .AboutUS-wrap .subHeader {
+    color: #000000;
+    
+}
+.aleft{
+        height: 100vh;
+        display: grid;
+        align-items: center;
+    }
+        .cans{
+        height:fit-content;
+        background: white;
+        box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
+        padding:40px 30px;
+        margin: 0px 30px;
+        transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+}
+.cans .subHeader{
+        font-size: smaller;
+    }
+
+.Services{
+    padding: 0 30px;
+    padding-top: 80px;
+    background-color: white;
+    padding-bottom:100px;
+    
+}
+.Services-wrap .mainHeader, .Services-wrap .subHeader{
+    text-align: center;
+    color: black;
+}
+.Service-box{
+    width: 140px;
+    height:180px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 3px solid #20a4fd;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.foricon{
+    height: 50px;
+    width: 50px;
+    background:gray;
+    
+    margin: auto;
+    margin-bottom: 20px;
+}
+.box-service-heade{
+    padding-top: 20px;
+    color: black;
+}
+.ServicePoints{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+/* Footer  */
+.Footer{
+    background: black;
+    display: grid;
+   padding: 50px 40px;
+}
+.footer-wraper{
+    display: block;
+}
+.left{
+    display: block;
+    grid-template-columns: 1fr 1fr;
+}
+.FirstFooter p{
+    color:white;
+    font-size: medium;
+}
+.footerLogo{
+    width: 80px;
+}
+.subs-footer{
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.SecondFooter{
+    margin-bottom: 40px;
+}
+.fHeader{
+    font-size: large;
+    color:gray;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.SecondFooter{
+    margin-top: 30px;
+}
+
+
+
+/* Sign in or up stylesheet */
+.SignManger {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.651);
+    backdrop-filter: blur(10px);
+    z-index: 2;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.S-box {
+    height: fit-content;
+    width: 80vw;
+    background: white;
+    display: grid;
+    padding: 40px 30px;
+    align-items: center;
+    border-radius: 10px;
+    transition: 2s;
+}
+.s-sub,
+.else-sign {
+    font-size: smaller;
+}
+.S-title-wrap {
+    margin-bottom: 20px;
+}
+.else-sign {
+    text-align: center;
+}
+.s-bottom {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.button-signin-menu {
+    width: fit-content;
+    background: #20a4fd;
+    margin-right: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 20px auto;
+}
+.s-forgot {
+    font-size: smaller;
+    text-align: right;
+}
+.inputWrap {
+    margin-top: 40px;
+}
+.back-sign {
+    float: right;
+}
+.s-top {
+    margin-bottom: 20px;
+}
+
+.input- {
+    background-color: #000000;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+}
+#signin-inputs {
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    outline: none;
+    width: 100%;
+}
+.input-tracking .button-signin {
+    margin: 0;
+}
+.OTP-wrap {
+    display: grid;
+    justify-content: center;
+}
+.otp-wrap-inner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.OTP-box {
+    margin: 10px;
+    width: 40px;
+    height: 50px;
+    font-size: x-large;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/* Log links Drop Down */
+.links-LogHub {
+    background: black;
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    z-index: -4;
+    right: 30px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    display: none;
+}
+.links-items {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: rgb(10, 10, 10);
+    border: none;
+    margin: 10px 0px 0px;
+    display: grid;
+    grid-template-columns: 25px 2fr;
+    padding: 0px 10px;
+}
+.links-items:hover {
+    background: rgb(39, 39, 39);
+}
+.links-name {
+    color: white;
+    align-self: center;
+    margin-left: 10px;
+    text-align: left;
+    font-size: small;
+}
+.iconify-inline {
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+.email-user {
+    font-size: smaller;
+    color: gray;
+}
+
+/* LogisticsUser */
+.LogLayout {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100vh;
+}
+.EditSection {
+    background: white;
+    overflow-y: scroll;
+}
+.buttonLinks {
+    background: black;
+    position: absolute;
+    width: 250px;
+    display: grid;
+    padding: 0px 35px;
+    padding-top: 20vh;
+    height: 100%;
+    display: none;
+}
+.active {
+    text-align: left;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: #20a4fd;
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    padding: 0 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+.bttn-link-log {
+    text-align: left;
+    width: 100%;
+    border: none;
+    height: 45px;
+    background: rgba(32, 165, 253, 0);
+    display: grid;
+    grid-template-columns: 30px 2fr;
+    padding: 0 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+.bttn-link-log:hover {
+    background: rgba(32, 165, 253, 0.289);
+}
+.log-text {
+    color: white;
+    align-self: center;
+    margin-left: 10px;
+    font-size: medium;
+}
+.iconify-inline[data-icon="bx:bx-menu"] {
+    font-size: 30px;
+}
+.signlogo{
+    width:50px;
+}
+.iconify-inline[data-icon="uil:arrow-left"] {
+    font-size: 30px;
+    color:black;
+}
+.iconify-inline[data-icon="bx:bxs-dashboard"],
+.iconify-inline[data-icon="fluent:arrow-trending-16-filled"],
+.iconify-inline[data-icon="akar-icons:folder"],
+.iconify-inline[data-icon="eva:settings-fill"] {
+    font-size: 20px;
+}
+.EditSection {
+    padding-top: 20vh;
+}
+.CardWrap {
+    margin: 30px auto;
+    box-shadow: 10px 10px 20px gray;
+    width: 300px;
+    height: 160px;
+    background-image: linear-gradient(45deg, #20a4fd, yellow);
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.stylBoxes {
+    display: flex;
+    width: 300px;
+    height: 160px;
+    overflow: hidden;
+}
+.box1 {
+    height: 200px;
+    width: 200px;
+    background: black;
+    transform: rotateZ(45deg) translateX(-60px) translateY(30px);
+    -webkit-transform: rotateZ(45deg) translateX(-60px) translateY(30px);
+    -moz-transform: rotateZ(45deg) translateX(-60px) translateY(30px);
+    -ms-transform: rotateZ(45deg) translateX(-60px) translateY(30px);
+    -o-transform: rotateZ(45deg) translateX(-60px) translateY(30px);
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.box2 {
+    height: 130px;
+    width: 130px;
+    background: black;
+    border-radius: 40px;
+    transform: rotateZ(45deg) translateX(70px) translateY(40px);
+    -webkit-transform: rotateZ(45deg) translateX(70px) translateY(40px);
+    -moz-transform: rotateZ(45deg) translateX(70px) translateY(40px);
+    -ms-transform: rotateZ(45deg) translateX(70px) translateY(40px);
+    -o-transform: rotateZ(45deg) translateX(70px) translateY(40px);
+}
+.content {
+    position: absolute;
+    transform: translateY(-75px);
+    -webkit-transform: translateY(-75px);
+    -moz-transform: translateY(-75px);
+    -ms-transform: translateY(-75px);
+    -o-transform: translateY(-75px);
+    margin-left: 20px;
+}
+.cardidnumber,
+.amountinCard {
+    color: white;
+}
+.dashboard {
+    padding: 0 40px;
+    height: 100vh;
+}
+
+.Wallet {
+    padding: 0 40px;
+}
+
+.butt-b {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+.w-box {
+    background: rgba(0, 0, 0, 0.178);
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 300px;
+}
+.lastdate {
+    text-align: right;
+    padding-top: 20px;
+    align-items: baseline;
+}
+.Title-log{
+    text-align:center;
+}
+
+.paylinks{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+.b-text-sub{
+        font-size: small;
+    }
+
+.Service-box:hover{
+    transition: 0.02s;
+    background-color: black;
+    width: 250px;
+    height:300px;
+    -webkit-transition: 0.02s;
+    -moz-transition: 0.02s;
+    -ms-transition: 0.02s;
+    -o-transition: 0.02s;
+    border: none;
+    border-radius: 10px;
+}
+.Service-box:hover .box-service-header{
+    color: white;
+    font-size: x-large;
+    font-weight: 500;
+    text-align:center;
+    
+}
+.extra-text{
+    display: none;
+    text-align:center;
+    font-size: smaller;
+    padding: 20px;
+}
+.Service-box:hover .extra-text{
+    display: block;
+    color: white;
+}
+.right{
+    background-color: gray;
+}
+.right{
+    background: url('https://images.unsplash.com/photo-1611746351408-c0a1346be8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+    background-size: cover;
+    background-position-x: -190px;
+}
+#i-eeon{
+    font-size:80px;
+    color: white;
+}
+.Service-box:hover #i-eeone{
+    font-size:60px;
+    color: white;
+}
+#i-eeone{
+    font-size:40px;
+    color: black;
+}
+.Qualities-sub-box{
+    background: none;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.foricon{
+    background: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown {
+    margin-top: 20px;
+    right:-25px;
+    display:none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px  0;
+}
+.dropdown a {
+  padding: 20px 25px;
+  text-decoration: none;
+  display: block;
+  margin:5px 0;
+}
+.dropdown a:hover {
+    background: rgb(33, 33, 33);
+}
+.HamMenu {
+    position: relative;
+  display: inline-block;
+}
+.HamMenu:hover .dropdown{display: block;}
+
+
+/* grid layout Wallet */
+.Testmo{
+    background-color: white;
+    padding: 50px 0;
+    padding-bottom: 200px;
+}
+.t-box{
+    height: fit-content;
+    width: 250px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
+    border-radius: 10px;
+    
+}
+.t-wrap-box{
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.t-name{
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.comment{
+    font-size: 16px;
+}
+.tests{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+.t-box{
+    margin: 30px;
+}
+.c-box{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+.img-tests img{
+    width: 100%;
+    
+}
+.img-tests{
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    margin: 10px 0;
+    margin-top: 12px;
+    background-size: cover;
+    border-radius: 5px;
+}
+#a{
+
+    background-size: cover;
+}
+#b{
+
+    background-size: cover;
+}
+#c{
+
+    background-size: cover;
+}
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

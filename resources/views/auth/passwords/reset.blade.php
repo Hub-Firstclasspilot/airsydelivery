@@ -1,7 +1,11 @@
-@extends('layouts.app')
+@php
+    $title = "Reset Password";
+@endphp
+
+@extends('layouts.front')
 
 @section('content')
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -59,6 +63,71 @@
                     </form>
                 </div>
             </div>
+        </div>
+    </div>
+</div> --}}
+<div class="SignManger">
+    <div class="S-box" id="sign-in">
+        <div class="s-wrap">
+            <div class="s-top">
+                <img
+                    src='{{ asset('images/Logo.png') }}'
+                    alt="Company Logo"
+                    class="signlogo"
+                />
+                <a href='{{ route('index') }}' class="back-sign">
+                    <span
+                        class="iconify-inline"
+                        data-icon="uil:arrow-left"
+                    ></span>
+                </a>
+            </div>
+
+            <div class="S-title-wrap">
+                <h1 class="s-Header">{{ __('Reset Password') }}</h1>
+            </div>
+
+            <form action="{{ route('password.update') }}" method="POST">
+                @csrf
+                
+                <input type="hidden" name="token" value="{{ $token }}">
+                
+                <div class="inputWrap">
+                    <div class="input-">
+                        <input
+                            type="email"
+                            name="email"
+                            value="{{ $email ?? old('email') }}"
+                            id="signin-inputs"
+                            placeholder="Email Address"
+                        />
+                    </div>
+                    <div class="input-">
+                        <input
+                            type="password"
+                            name="password"
+                            id="signin-inputs"
+                            placeholder="Password"
+                        />
+                    </div>
+                    <div class="input-">
+                        <input
+                            type="password"
+                            name="password_confirmation"
+                            id="signin-inputs"
+                            placeholder="Confirm Password"
+                        />
+                    </div>
+            </div>
+
+            <div class="s-bottom">
+                <div class="button-signin-menu">
+                    <button type="submit" class="link-nav-button-m" style="cursor: pointer;">
+                        {{ __('Reset Password') }}
+                    </button>
+                </div>
+            </div>
+            </form>
         </div>
     </div>
 </div>

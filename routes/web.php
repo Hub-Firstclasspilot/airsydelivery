@@ -17,6 +17,8 @@ Route::get('/', 'PageController@index')->name('index');
 
 Route::post('/package/track', 'TrackingController')->name('package.track');
 
+Route::post('/package/track/results', 'TrackingController')->name('package.track.results');
+
 Route::post('/otp/resend', 'OTPController@resendOTP')->name('otp.resend');
 
 Route::post('/otp/verify', 'OTPController@verifyOTP')->name('otp.verify');

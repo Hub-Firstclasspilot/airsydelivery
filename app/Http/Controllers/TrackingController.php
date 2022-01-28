@@ -22,12 +22,22 @@ class TrackingController extends Controller
 
         $package = Package::where("tracking_id", $request->trakcing_id)->first();
 
-        if (!$package) {
+        
+        if (is_null($package)) {
+            //dd($package);
+            $title = "Tracking Results";
+
+            $status = [];
+
             Session::flash("message", "Package does not exist");
+
+            return view('pages.track-package', compact("title", "status"));
         }
+
+        $title = "Tracking Results";
 
         $status = $package->status->latest();
 
-        return view();
+        return view("pages.track-package", compact("title", "status"));
     }
 }

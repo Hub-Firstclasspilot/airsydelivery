@@ -28,6 +28,6 @@ class OrderTransactionUpdateNotification extends Mailable
      */
     public function build()
     {
-        return $this->markdown('=emails.order-transaction-update-notification');
+        return $this->markdown('emails.order-transaction-update-notification');
     }
 }

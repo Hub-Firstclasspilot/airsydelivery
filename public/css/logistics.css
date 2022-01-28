@@ -1,0 +1,53 @@
+.logi{
+    background: white;
+    display: grid;
+    justify-content: center;
+    height: 87vh;
+    padding: 5vh 0;
+    margin-top: 12vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.wrap-logi{
+    margin-top: 6vh;
+} 
+.Order{
+   
+    height: fit-content;
+    padding: 20px 5vw;
+    box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+}
+.TextMainSection{
+    margin-top: 20px;
+}
+.TextMainSection p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.Trackid{
+    margin-top: 20px;
+}
+.Trackid .input-tracking{
+    background: rgb(230, 230, 230);
+}
+.orderinfo{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.pluswrap{
+    display: inline;
+    float: right;
+}
+.plusbox{
+    width: fit-content;
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #20a4fd;
+    border-radius: 10px;
+}
