@@ -27,7 +27,7 @@ License: You must have a valid license purchased only from themeforest(the above
         
         @include('partials.backend._mobile')
         <div class="flex">
-           @include('partials.bakcend._nav')
+           @include('partials.backend._nav')
             <!-- BEGIN: Content -->
             <div class="content">
                 @include('partials.backend._top-bar')
