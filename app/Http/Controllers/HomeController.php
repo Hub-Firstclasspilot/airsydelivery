@@ -23,6 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $title = "Landing Page";
+
+        return view('auth.back.index', compact("title"));
     }
 }
