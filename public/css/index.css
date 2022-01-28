@@ -100,7 +100,7 @@ body {
 /* Home Main */
 .HomeMain {
     height: fit-content;
-    background: url("./images/background.jpg");
+    background: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 0vw;
