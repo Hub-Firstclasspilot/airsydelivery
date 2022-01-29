@@ -1,9 +1,5 @@
 @extends('layouts.auth.back')
 
-@php
-    dump($packages);
-@endphp
-
 @section('content')
 <div class="grid grid-cols-6 gap-12 mt-5">
     <div class="intro-y col-span-12 lg:col-span-6">
