@@ -386,8 +386,8 @@
         </div>
     </div>
 
-    <div class="What-who-ship" id="#" style="background: white; margin:0;">
-        <div class="Qualities-wrap"  >
+    <div class="What-who-ship" id="#" style="background: white; margin:0 auto; padding: 3rem 0;">
+        <div class="Qualities-wrap"  style="margin: 0 auto; text-align:center;">
             <h1 class="mainHeader" style="color: black">
                7<span class="blue-mainHeader">00+</span>
                  <br />
@@ -397,55 +397,43 @@
             </p>
         </div>
         <div class="Qualities-boxes">
-            <div class="Who-ship-wrap-box">
+            <div class="Who-ship-wrap-box" style="display: flex; justify-content: space-between;">
 
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 15.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 16.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 17.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 18.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 19.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 20.svg') }}" alt="">
                 </div>
-                <div class="companys">
-                    <img src="{{ asset('images/company logos/image 21.svg') }}" alt="">
-                </div>
-                <div class="companys">
-                    <img src="{{ asset('images/company logos/image 22.svg') }}" alt="">
-                </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 23.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 24.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image 26.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/image _mouka.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/Honeywell_logo 1.svg') }}" alt="">
                 </div>
-                <div class="companys">
+                <div class="companys" style="margin: 0 1rem;">
                     <img src="{{ asset('images/company logos/DHL.svg') }}" alt="">
-                </div>
-                <div class="companys">
-                    <img src="{{ asset('images/company logos/image_lafarge.svg') }}" alt="">
-                </div>
-                <div class="companys">
-                    <img src="{{ asset('images/company logos/image_uni.svg') }}" alt="">
                 </div>
             </div>
         </div>
