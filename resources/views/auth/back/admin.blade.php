@@ -50,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div class="text-3xl font-bold leading-8 mt-6">0</div>
-                                <div class="text-base text-gray-600 mt-1">Packages Received</div>
+                                <div class="text-base text-gray-600 mt-1">Total Users</div>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                     </div>
                                 </div>
                                 <div class="text-3xl font-bold leading-8 mt-6">0</div>
-                                <div class="text-base text-gray-600 mt-1">Invoices and Receipts</div>
+                                <div class="text-base text-gray-600 mt-1">Revenue Received</div>
                             </div>
                         </div>
                     </div>

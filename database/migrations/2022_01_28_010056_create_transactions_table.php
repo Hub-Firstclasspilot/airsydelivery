@@ -14,7 +14,7 @@ class CreateTransactionsTable extends Migration
     public function up()
     {
         Schema::create('transactions', function (Blueprint $table) {
-            $table->uuid("id")->primary();
+            $table->id();
             $table->float("amount");
             $table->string("reference_id")->unique();
             $table->enum("string", ["pending", "processing", "paid"])->default("pending");

@@ -14,8 +14,8 @@ class CreateInvoicesTable extends Migration
     public function up()
     {
         Schema::create('invoices', function (Blueprint $table) {
-            $table->uuid("id")->primary();
-            $table->foreignUuid("transaction_id")->constrained();
+            $table->id();
+            $table->unsignedBigInteger("transaction_id")->references("id")->on("transactions")->cascadeOnUpdate()->cascadeOnDelete();
             $table->string("reference_id")->unique();
             $table->string("url");
             $table->timestamps();

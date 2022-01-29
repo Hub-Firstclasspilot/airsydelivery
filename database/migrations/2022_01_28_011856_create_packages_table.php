@@ -14,7 +14,7 @@ class CreatePackagesTable extends Migration
     public function up()
     {
         Schema::create('packages', function (Blueprint $table) {
-            $table->uuid("id")->primary();
+            $table->id();
             $table->string("tracking_id")->unique();
             $table->string("type");
             $table->float("weight");

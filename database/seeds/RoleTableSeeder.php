@@ -1,7 +1,9 @@
 <?php
 
-use App\Role;
+
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 
 class RoleTableSeeder extends Seeder
 {
@@ -12,28 +14,52 @@ class RoleTableSeeder extends Seeder
      */
     public function run()
     {
-        Role::create([
+        $user = Role::create([
             "name" => "user",
-            "permissions" => json_encode([
-                "make_orders" => true,
-                "check_status" => true,
-                "message_admin" => true,
-                "make_payment" =>  true
-            ])
         ]);
 
-        Role::create([
+        $admin = Role::create([
             "name" => "admin",
-            "permissions" => json_encode([
-                "make_orders" => true,
-                "message_user" => true,
-                "delete_user" => true,
-                "create_user" => true,
-                "authorize_payment" => true,
-                "crud_order" => true,
-                "crud_status" => true,
-                "crud_transaction" => true
-            ])
         ]);
+
+        Permission::create([
+            "name" => "make orders"
+        ])->syncRoles([$admin, $user]);
+
+        Permission::create([
+            "name" => "check status"
+        ])->syncRoles([$admin, $user]);
+
+        Permission::create([
+            "name" => "send message"
+        ])->syncRoles([$admin, $user]);
+
+        Permission::create([
+            "name" => "make payment"
+        ])->syncRoles([$admin, $user]);
+
+        Permission::create([
+            "name" => "delete user"
+        ])->assignRole($admin);
+
+        Permission::create([
+            "name" => "create user"
+        ])->assignRole($admin);
+
+        Permission::create([
+            "name" => "authorize payment"
+        ])->assignRole($admin);
+
+        Permission::create([
+            "name" => "edit orders"
+        ])->assignRole($admin);
+
+        Permission::create([
+            "name" => "edit status"
+        ])->assignRole($admin);
+
+        Permission::create([
+            "name" => "perform transactions"
+        ])->assignRole($admin);
     }
 }

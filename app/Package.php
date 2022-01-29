@@ -7,8 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Package extends Model
 {
-    use Uuid;
-
     protected $fillable = [
         "tracking_id",
         "type",
@@ -34,7 +32,7 @@ class Package extends Model
 
     public function status()
     {
-        return $this->hasMany(Status::class, "order_id");
+        return $this->hasMany(Status::class, "package_id");
     } 
 
     public function transaction()

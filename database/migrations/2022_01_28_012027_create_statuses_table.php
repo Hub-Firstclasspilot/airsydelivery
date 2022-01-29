@@ -15,10 +15,10 @@ class CreateStatusesTable extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->id();
-            $table->foreignUuid("package_id")->constrained();
+            $table->unsignedBigInteger("package_id")->references("id")->on("packages")->cascadeOnUpdate()->cascadeOnDelete();
             $table->enum("status", ["created", "processing", "delayed", "delivered", "completed"])->default("created");
             $table->string("location");
-            $table->string("description");
+            $table->string("description")->nullable();
             $table->timestamps();
         });
     }

@@ -20,7 +20,7 @@ class AdminTableSeeder extends Seeder
             "email_verified_at" => now()
         ]);
 
-        $user->roles()->attach(1);
+        $user->assignRole('user');
 
         $admin = User::create([
             "name" => "ADC Administrator",
@@ -29,6 +29,6 @@ class AdminTableSeeder extends Seeder
             "email_verified_at" => now()
         ]);
 
-        $admin->roles()->attach(2);
+        $admin->assignRole('admin');
     }
 }

@@ -25,8 +25,9 @@ Route::post('/otp/verify', 'OTPController@verifyOTP')->name('otp.verify');
 
 Route::middleware("auth")->group(function(){
     // Package Routes
-    Route::get('/packages', 'PageController@index')->name('packages');
-    Route::post('/packages', 'PackageController@store')->name('package.create');
+    Route::get('/dashboard/packages', 'PackageController@index')->name('packages');
+    Route::get('/packages/create', 'PackageController@create')->name('package.create');
+    Route::post('/packages', 'PackageController@store')->name('package.create.post');
     Route::get('/packages/{package}', 'PackageController@edit')->name('package.edit');
     Route::patch('/packages/{package}', 'PackageController@update')->name('package.update');
     Route::delete('/package/{package}', 'PackageController@delete')->name("package.delete");
@@ -43,8 +44,15 @@ Route::middleware("auth")->group(function(){
     Route::get('/packages/{package}/transaction/edit', 'TransactionController@edit')->name('package.transaction.edit');
     Route::patch('/packages/{package}/transaction', 'TransactionController@update')->name('package.transaction.update');
     Route::delete('/packages/{package}/transaction', 'TransactionController@delete')->name('package.transaction.delete');
+
+    Route::get('/notifications/email', 'NotifcationController@getEmailPage')->name('notification.email');
+    Route::get('/notifications/sms', 'NotifcationController@getSmsPage')->name('notifications.sms');
+    Route::post('/notifications/email', 'NotifcationController@sendEmail')->name('notifications.email.send');
+    Route::post('/notifications/sms', 'NotifcationController@sendSms')->name('notifications.sms.send');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard/home', 'HomeController@index')->name('home');
+
+Route::get('/dashboard/admin', 'HomeController@admin')->name('admin');

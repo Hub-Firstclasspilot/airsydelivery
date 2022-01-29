@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'twilio' => [
+        'from' => env('TWILIO_PHONE_NUMBER'),
+        'sid' => env('TWILIO_SID'),
+        'token' => env('TWILIO_TOKEN')
+    ],
+
 ];

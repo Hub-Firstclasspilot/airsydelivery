@@ -10,7 +10,9 @@ License: You must have a valid license purchased only from themeforest(the above
 -->
 <html lang="en">
     <!-- BEGIN: Head -->
-    <head>
+    <head>    
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta charset="utf-8">
         <link href="{{ asset('images/Logo.png', true) }}" rel="shortcut icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">

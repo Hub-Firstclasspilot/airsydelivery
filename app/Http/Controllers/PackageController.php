@@ -16,29 +16,32 @@ class PackageController extends Controller
 
         $packages = Package::all();
 
-        return view();
+        return view('auth.back.shipment.index', compact('title', 'packages'));
     }
 
     public function create()
     {
+        $title = "Create Shipment";
 
+        return view("auth.back.shipment.create", compact("title"));
     }
 
     public function store(Request $request)
     {
+        
         $request->validate([
             "type" => "required|string",
             "weight" => "required|numeric",
             "sender_name" => "required|string",
             "sender_phone" => "nullable|string",
             "sender_email" => "nullable|email",
-            "sender_location" => "required|string",
-            "receivr_name" => "required|string",
+            "sender_address" => "required|string",
+            "receiver_name" => "required|string",
             "receiver_phone" => "nullable|string",
             "receiver_email" => "nullable|email",
             "receiver_location" => "required|string",
-            "location" => "required|string",
-            "description" => "required|string"
+            "location" => "nullable|string",
+            "description" => "nullable|string"
         ]);
 
         $package = Package::create([
@@ -46,8 +49,8 @@ class PackageController extends Controller
             "weight" => $request->weight,
             "sender_name" => $request->sender_name,
             "sender_phone" => $request->sender_phone,
-            "sendder_email" => $request->sendder_email,
-            "sender_location" => $request->sender_location,
+            "sender_email" => $request->sendder_email,
+            "sender_location" => $request->sender_address,
             "receiver_name" => $request->receiver_name,
             "receiver_location" => $request->receiver_location,
             "receiver_phone" => $request->receiver_phone,
@@ -61,9 +64,9 @@ class PackageController extends Controller
 
         Session::flash("message", "your order has been successfully created. You will get a confirmatin email soon");
 
-        Mail::to($package->sender_email)->send(new OrderCreated());
+       //Mail::to($package->sender_email)->send(new OrderCreated());
 
-        return view();
+        return redirect('/packages');
     }
 
     public function edit(Package $package)

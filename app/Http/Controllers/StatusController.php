@@ -23,7 +23,7 @@ class StatusController extends Controller
 
         $title = "Edit Package Status";
 
-        return view("", compact("title", "status"));
+        return view("auth.back.shipment.update-status", compact("title", "status"));
     }
 
     public function update(Request $request, Package $package)

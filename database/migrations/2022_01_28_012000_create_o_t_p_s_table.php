@@ -14,8 +14,8 @@ class CreateOTPSTable extends Migration
     public function up()
     {
         Schema::create('o_t_p_s', function (Blueprint $table) {
-            $table->uuid("id")->primary();
-            $table->foreignUuid('user_id');
+            $table->id();
+            $table->unsignedBigInteger("user_id")->references("id")->on("users")->cascadeOnUpdate()->cascadeOnDelete();
             $table->string('token');
             $table->expires();
             $table->timestamps();
