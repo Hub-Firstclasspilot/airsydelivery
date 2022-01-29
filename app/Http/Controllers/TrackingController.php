@@ -31,13 +31,13 @@ class TrackingController extends Controller
 
             Session::flash("message", "Package does not exist");
 
-            return view('pages.track-package', compact("title", "status"));
+            return view('auth.back.track', compact("title", "status"));
         }
 
         $title = "Tracking Results";
 
         $status = $package->status->latest();
 
-        return view("pages.track-package", compact("title", "status"));
+        return view("auth.back.track", compact("title", "status"));
     }
 }
