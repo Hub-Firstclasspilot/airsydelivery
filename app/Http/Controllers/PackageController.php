@@ -66,7 +66,7 @@ class PackageController extends Controller
 
        //Mail::to($package->sender_email)->send(new OrderCreated());
 
-        return redirect('/packages');
+        return redirect('/dashboard/packages');
     }
 
     public function edit(Package $package)
