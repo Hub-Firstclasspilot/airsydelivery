@@ -1,3 +1,6 @@
+body{
+    background: white;
+}
 .logi{
     background: white;
     display: grid;
@@ -42,6 +45,7 @@
     float: right;
 }
 .plusbox{
+    border: none;
     width: fit-content;
     padding: 10px;
     display: grid;
@@ -50,4 +54,86 @@
     color: white;
     background: #20a4fd;
     border-radius: 10px;
+}
+
+.addOrderPage{
+    position:fixed;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.857);
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.orderHolder{
+    height: fit-content;
+    padding: 20px 3vw;
+    box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
+    border-radius: 10px;
+    display: grid;
+    background-color: white;
+    justify-content: center;
+}
+.inputs-o{
+    margin: 0 10px;
+    margin-top:15px;
+    background:  rgb(233, 233, 233);
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding: 8px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.orderHolder form{
+    margin-top: 20px;
+}
+.iconholder{
+    height: 30px;
+    width: 30px;
+    border-right: 3px solid gray;
+    display: flex;
+    align-items: center;
+}
+.inputs-o input{
+    background: none;
+    font-size: 11px;
+    padding: 5px 10px;
+    display: block;
+    width: 100%;
+    color: black;
+    border: none;
+    outline: none;
+}
+.o-button{
+    width: fit-content;
+    padding: 10px 25px;
+    background: #d1d1d1;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 20px auto;
+    color: white;
+}
+.o-buttons-order{
+    padding: 10px 20px;
+}
+#DropOff-button{
+    float: right;
+}
+.o-button:hover{
+    background: #20a5fd;
+        box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
+}
+.header-o{
+    display: grid;
+    grid-template-columns: auto 30px;
 }

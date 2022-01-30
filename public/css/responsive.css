@@ -1,7 +1,13 @@
+@media only screen and (min-width: 1500px) {
+        .Who-ship-wrap-box{
+    display:grid;
+    grid-template-columns: repeat(4, 200px);
+}
+}
 @media only screen and (min-width: 800px) {
     .NavBar,
     .HomeMain-overlay,
-    .Qualities {
+    .Qualities, .What-we-ship,.What-who-ship {
         padding: 0 70px;
     }
     .links-LogHub {
@@ -160,4 +166,21 @@
         box-shadow: 0px 0px 15px 2px rgb(211, 211, 211);
         border-radius: 10px;
     }
+    .What-we-ship {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+    .What-who-ship{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+    }
+    .Who-ship-wrap-box{
+    display:grid;
+    grid-template-columns: repeat(4, 200px);
+}
+.What-we-ship-wrap-box{
+    display: grid;
+    grid-template-areas: 'oo oo oo ss'
+                         'tt tt fo fi';
+}
 }

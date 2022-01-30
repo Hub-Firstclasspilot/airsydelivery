@@ -100,13 +100,13 @@ body {
 /* Home Main */
 .HomeMain {
     height: fit-content;
-    background: url("../images/background.jpg");
+    background: url("./images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: 0vw;
 }
 .HomeMain-overlay,
-.Qualities {
+.Qualities, .What-we-ship, .What-who-ship {
     height: 94vh;
     background: rgba(0, 0, 0, 0.283);
     display: grid;
@@ -126,7 +126,7 @@ body {
 .subHeader {
     padding-top: 30px;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     color: white;
 }
 
@@ -159,10 +159,12 @@ body {
 }
 
 /* Qualities */
-.Qualities {
+.Qualities, .What-we-ship , .What-who-ship{
     height: fit-content;
     background: black;
     margin-bottom: 80px;
+    display: grid;
+    justify-content: center;
 }
 .Qualities-boxes {
     margin-top: 60px;
@@ -808,11 +810,47 @@ body {
 *{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.is-invalid {
-    border-color: red;
-    color: red;
+.achive{
+    color: white;
+    width:fit-content;
+    height:fit-content;
+    padding: 30px;
+    text-align: center;
 }
-.invalid-feedback {
-    color: red;
-    margin: 1.5rem 0;
+.achive h1{
+    font-size: 30px;
+    font-weight: 300;
+}
+.achive h3{
+    font-size: 12px;
+}
+.What-we-ship-wrap-box{
+    display: block;
+    
+}
+#o-o{
+    grid-area: oo;
+}
+#o-s{
+    grid-area: ss;
+}
+#o-t{
+    grid-area: tt;
+}
+#o-fo{
+    grid-area: fo;
+}
+#o-fi{
+    grid-area: fi;
+}
+.Who-ship-wrap-box{
+    display:grid;
+    grid-template-columns: repeat(2, 180px);
+}
+.companys{
+    height:80px;
+    width:150px;
+    margin:5px;
+    display: grid;
+    justify-content: center;
 }
