@@ -17,12 +17,11 @@
                 </p>
                 <form action="">
                 <div class="track-button">
-                        <div class="input-tracking">
-                            <input type="text" name="" id="id-inputs" placeholder='Enter Tracking ID' />
-                            <div class="button-signin">
-                                <a href="#" class="link-nav-button">Search</a>
-                            </div>
-                        </div>
+                    <div class="button-signin">
+                        <a href="http://track.airsydelivery.com/index.php/track/" class="link-nav-button">
+                            Track Your Order
+                        </a>
+                    </div>
                 </div>
                 </form>
             </div>
